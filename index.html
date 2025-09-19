@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manasa Reddy | Portfolio</title>
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ECD4EA, #a987a8, #F4EAF1, #C9C3DE, #b5afc4);
+    color: #ffffff;
+    min-height: 100vh;
+  }
+
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#a47c9d;
+    padding: 1em 2em;
+    position: relative;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  }
+
+  .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color:white;
+  }
+
+  .nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 2em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: #6aa574;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+  }
+
+  .nav-links li a:hover {
+    color: #4eabbe;
+    transform: scale(1.1);
+  }
+
+  .nav-links li a:active {
+    transform: scale(0.95);
+  }
+
+  /* Main content split */
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 2em;
+    gap: 2em;
+    flex-wrap: wrap;
+  }
+
+  .left-box, .right-box {
+    flex: 1;
+    min-width: 300px;
+    border: 2px solid #4CAF50;
+    padding: 2em;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+  }
+
+  .left-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeInLeft 1.5s;
+  }
+
+  .right-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInRight 1.5s;
+  }
+
+  .right-box img {
+    width: 90%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.6);
+    transition: transform 0.3s;
+  }
+
+  .right-box img:hover {
+    transform: scale(1.05);
+  }
+
+  .right-box img:active {
+    transform: scale(0.95);
+  }
+
+  h1 {
+    font-size: 2.8em;
+    margin: 0.2em 0;
+    color: #ffffff;
+  }
+
+  .highlight {
+    color: #4CAF50;
+  }
+
+  .role-text {
+    font-weight: bold;
+    font-size: 1.6em;
+    margin-top: 0.5em;
+    color: #4CAF50;
+  }
+
+  .blinker {
+    animation: blink 1s infinite;
+    color: #4CAF50;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  p {
+    font-size: 1.2em;
+    color: #dcdcdc;
+  }
+
+  /* Buttons */
+  .buttons a {
+    display: inline-block;
+    margin-right: 1em;
+    margin-top: 1.5em;
+    padding: 0.8em 1.5em;
+    background-color: #4CAF50;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+  }
+
+  .buttons a:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+
+  .buttons a:active {
+    transform: scale(0.95);
+  }
+
+  /* Social Icons */
+  .social-icons {
+    margin-top: 2em;
+  }
+
+  .social-icons a {
+    color: #ffffff;
+    font-size: 1.7em;
+    margin-right: 1em;
+    transition: color 0.3s, transform 0.2s;
+  }
+
+  .social-icons a:hover {
+    color: #45a049;
+    transform: scale(1.2);
+  }
+
+  .social-icons a:active {
+    transform: scale(0.95);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+    }
+
+    .left-box, .right-box {
+      width: 100%;
+    }
+  }
+
+  @keyframes fadeInLeft {
+    from {opacity: 0; transform: translateX(-50px);}
+    to {opacity: 1; transform: translateX(0);}
+  }
+
+  @keyframes fadeInRight {
+    from {opacity: 0; transform: translateX(50px);}
+    to {opacity: 1; transform: translateX(0);}
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">MANASA REDDY</div>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="achievements.html">ACHIEVEMENTS</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="skills.html">SKILL STACK</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <div class="left-box">
+      <h1>WHAT'S UP GUYS.....!</h1>
+      <h1>I'm <span class="highlight">Manasa Reddy</span></h1>
+      <h2 class="role-text">
+        <span id="role">I'm CSE Undergraduate</span><span class="blinker">|</span>
+      </h2>
+      <p>Pursuing my B.Tech Degree in KL University</p>
+    
+    </div>
+
+    <div class="right-box">
+      <img src="images/Profile1.jpg" alt="Profile Image" />
+    </div>
+  </div>
+
+  <script>
+    const roles = [
+      "I'm Fullstack Developer",
+      "I'm CSE Student",
+      "I'm a Fast Learner",
+    ];
+
+    let currentRole = 0;
+    let currentText = "";
+    let isTyping = true;
+    const roleElement = document.getElementById("role");
+    const typingSpeed = 100;
+    const erasingSpeed = 50;
+    const visibleTime = 1000;
+
+    function typeEffect() {
+      if (isTyping) {
+        currentText += roles[currentRole][currentText.length];
+        roleElement.textContent = currentText;
+        if (currentText === roles[currentRole]) {
+          setTimeout(eraseEffect, visibleTime);
+        } else {
+          setTimeout(typeEffect, typingSpeed);
+        }
+      }
+    }
+
+    function eraseEffect() {
+      if (currentText.length > 0) {
+        currentText = currentText.slice(0, -1);
+        roleElement.textContent = currentText;
+        if (currentText.length === 0) {
+          currentRole = (currentRole + 1) % roles.length;
+          setTimeout(typeEffect, 0);
+        } else {
+          setTimeout(eraseEffect, erasingSpeed);
+        }
+      }
+    }
+
+    typeEffect();
+  </script>
+</body>
+</html>
